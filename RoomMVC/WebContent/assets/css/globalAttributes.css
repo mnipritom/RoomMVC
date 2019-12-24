@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body{
+	background-color: #E0F2F1;
+	font-family: roboto;
+}
+@font-face{
+	font-family: roboto;
+	src: url(../fonts/roboto-condensed/RobotoCondensed-Regular.ttf);
+}
+
+#container{
+	display: flex;
+	margin: auto;
+	margin-top: 20vh;
+	width: 1200px;
+	height: 50vh;
+}
