@@ -2,6 +2,7 @@
 body{
 	background-color: #E0F2F1;
 	font-family: roboto;
+	overflow: hidden; 
 }
 @font-face{
 	font-family: roboto;
