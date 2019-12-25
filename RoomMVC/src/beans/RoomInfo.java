@@ -7,10 +7,13 @@ public class RoomInfo {
 	public RoomInfo() {}
 	
 	public RoomInfo(String roomName, String northWall, String eastWall, String westWall, String southWall) {
+		super(); //returns a RoomInfo object
 		this.roomName = roomName;
 		this.northWall = northWall;
 		this.eastWall = eastWall;
 		this.southWall = southWall;
+		
+		
 	}
 
 	public String getRoomName() {

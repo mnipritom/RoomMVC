@@ -13,29 +13,31 @@
 <link href="${pageContext.request.contextPath}/assets/css/globalAttributes.css" rel="stylesheet" type="text/css"/>
 <link href="${pageContext.request.contextPath}/assets/css/textFormat.css" rel="stylesheet" type="text/css"/>
 
-<title>Create a Room</title>
+<title>SplashScreen</title>
 </head>
 <body>
 <div id="container">
 	
 	<div class="roomView">
-		<h1>
-			Create a Room 
-		</h1>
+		<h1>Room Name:</h1>
+		<h3>User Name</h3>
 	</div>
+	
 	<div class="wallView">
-		<form class="forms" action="createARoom" method="post">
-			Set Room name: <input type="text" name="RoomName"><br>
-			Set North Wall name: <input type="text" name="NorthWallName"><br>
-			Set East Wall name: <input type="text" name="EastWallName"><br>
-			Set West Wall name: <input type="text" name="WestWallName"><br>
-			Set South Wall name: <input type="text" name="SouthWallName"><br>
-			<input class="buttons" type="submit" value="OK">
-		</form>
-		
-	</div>
-	
-	
+		<div class="wallViewContent">
+			<c:forEach items ="${showCreatedRoom}" var = "wall" begin="2" end="5">
+				<div class="wallViewWallName">
+					<section>${wall} :</section>
+						<c:forEach var = "note" begin = "1" end = "20">
+							<div class="wallViewNoteName">
+								<section><h1>Note: ${note}</h1></section>
+								<section>Note ${note} Description.</section>		
+							</div>
+						</c:forEach>
+				</div>
+			</c:forEach>
+		</div>
+	</div> 
 	
 </div>
 

@@ -13,21 +13,21 @@
 <link href="${pageContext.request.contextPath}/assets/css/globalAttributes.css" rel="stylesheet" type="text/css"/>
 <link href="${pageContext.request.contextPath}/assets/css/textFormat.css" rel="stylesheet" type="text/css"/>
 
-<title>SplashScreen</title>
+<title>Room List</title>
 </head>
 <body>
 <div id="container">
 	
 	<div class="roomView">
-		<h1>Skeuomorphic UX</h1>
-		<h3>Project Author: 那思路</h3>
+		<h1>Room Name:</h1>
+		<h3>User Name</h3>
 	</div>
 	
 	<div class="wallView">
 		<div class="wallViewContent">
-			<c:forEach var = "wall" begin = "1" end = "4">
+			<c:forEach items ="${allAvailableRooms}" var = "wall" begin="2" end="5">
 				<div class="wallViewWallName">
-					<section>Wall: ${wall}</section>
+					<section>${items.wall} :</section>
 						<c:forEach var = "note" begin = "1" end = "20">
 							<div class="wallViewNoteName">
 								<section><h1>Note: ${note}</h1></section>
