@@ -28,8 +28,8 @@
 			<c:forEach var = "wall" begin = "1" end = "4">
 				<div class="wallViewWallName">
 					<section>Wall: ${wall}</section>
-						<c:forEach var = "note" begin = "1" end = "4">
-							<div class="note">
+						<c:forEach var = "note" begin = "1" end = "20">
+							<div class="wallViewNoteName">
 								<section>Note: ${note}</section>		
 							</div>
 						</c:forEach>

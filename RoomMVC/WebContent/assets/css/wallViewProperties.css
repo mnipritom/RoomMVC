@@ -21,11 +21,31 @@
 }
 .wallViewContent{
 	overflow-y: scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
 	height: inherit;
 	
 } 
 .wallViewWallName{
-	height: 100vh;
+	height: inherit;
+	overflow-x: scroll;
+	overflow-y: hidden; 
+	white-space: nowrap;
+	scroll-snap-align: center;
+}
+.wallViewNoteName{
+
+	margin-top: 15px;
+	height: inherit;
+	width: 100%;
+
+	display: inline-block;
+	
+	background-color: coral; 
+	border-color: coral;
+	border-width: 0.5px;
+	border-style: solid;
+	border-radius: 5px;
 }
 
 

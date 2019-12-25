@@ -12,3 +12,10 @@
 	
 	color: #FAFAFA;
 }
+
+.wallViewWallName{
+	text-align: center;
+}
+.wallViewNoteName{
+	text-align: left;
+}
