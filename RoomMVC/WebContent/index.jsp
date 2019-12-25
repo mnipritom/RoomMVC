@@ -17,10 +17,10 @@
 
 	<div class="roomView">
 		<h1>Skeuomorphic UX</h1>
-		<p>Project Author:</p>
+		<p>Project Author: </p>
 	 </div>
 	<div class="wallView">
-	
+		<table></table>
 	</div>
 </div>
 
