@@ -1,0 +1,23 @@
+.roomView {
+  margin: 30px;
+  
+  width: 400px;
+  height: 400px;
+  background: #FFEBEE;
+  border-radius: 10px;
+  
+  box-shadow: 0px 5px 40px #8c8c8c;
+  
+  transition: 1s box-shadow;
+  
+  padding: 20px;
+  
+  background-image: url(../img/roomViewBackground.jpg);
+  background-size: cover;
+  
+}
+
+.roomView:hover {
+  box-shadow: 0px 5px 40px coral;
+}
+

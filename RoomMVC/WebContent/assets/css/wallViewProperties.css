@@ -19,6 +19,29 @@
 	flex-grow: 1;
 	
 }
+.forms{
+	
+	height: 100%;
+	margin: 20px;
+}
+.forms input{
+	padding-left: 5px;
+	width: 100%;
+	border-width: 0px;
+	border-radius: 5px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+.buttons{
+	
+	border-radius: 5px;
+	background-color: coral;
+	margin-top : 10px;
+	padding-top: 5px;
+}
+.wallInfo{
+	width: 400px;
+}
 .wallViewContent{
 	overflow-y: scroll;
 	scroll-behavior: smooth;
@@ -36,6 +59,7 @@
 	overflow-x: scroll;
 	scroll-behavior: smooth;
 	scroll-snap-type: x mandatory;
+	
 
 }
 .wallViewNoteName{
@@ -61,7 +85,18 @@
 	border-color: coral;
 	border-width: 0.5px;
 	border-style: solid;
-	border-radius: 5px;
+	border-radius: 10px;
+	
+	cursor: pointer;
+}
+.wallViewNoteName section{
+	margin: 20px;
+}
+
+.wallViewNoteName:hover {
+	box-shadow: 0px 5px 15px coral;
+	transition: 1s box-shadow;
+	
 }
 
 

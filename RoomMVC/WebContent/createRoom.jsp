@@ -13,31 +13,29 @@
 <link href="${pageContext.request.contextPath}/assets/css/globalAttributes.css" rel="stylesheet" type="text/css"/>
 <link href="${pageContext.request.contextPath}/assets/css/textFormat.css" rel="stylesheet" type="text/css"/>
 
-<title>SplashScreen</title>
+<title>Create a Room</title>
 </head>
 <body>
 <div id="container">
 	
 	<div class="roomView">
-		<h1>Skeuomorphic UX</h1>
-		<h3>Project Author: 那思路</h3>
+		<h1>
+			Create a Room 
+		</h1>
+	</div>
+	<div class="wallView">
+		<form class="forms" action="FormInputs" method="POST">
+			Set Room name: <input type="text" name="RoomName"><br>
+			Set North Wall name: <input type="text" name="NorthWallName"><br>
+			Set East Wall name: <input type="text" name="EastWallName"><br>
+			Set West Wall name: <input type="text" name="WestWallName"><br>
+			Set South Wall name: <input type="text" name="SouthWallName"><br>
+			<input class="buttons" type="submit" value="OK">
+		</form>
+		
 	</div>
 	
-	<div class="wallView">
-		<div class="wallViewContent">
-			<c:forEach var = "wall" begin = "1" end = "4">
-				<div class="wallViewWallName">
-					<section>Wall: ${wall}</section>
-						<c:forEach var = "note" begin = "1" end = "20">
-							<div class="wallViewNoteName">
-								<section><h1>Note: ${note}</h1></section>
-								<section>Note ${note} Description.</section>		
-							</div>
-						</c:forEach>
-				</div>
-			</c:forEach>
-		</div>
-	</div> 
+	
 	
 </div>
 

@@ -1,21 +1,25 @@
 @charset "UTF-8";
 
-.roomView h1{
+.roomView h1{ 
 	padding-top: 150px;
-	text-color: white;
 	letter-spacing: 1px;
 	text-shadow: 0px 1px #8c8c8c;
 	color: #FAFAFA;
 }
 
-.roomView p{
-	
+.roomView h3{
+
+	text-shadow: 0px 1px #8c8c8c;
 	color: #FAFAFA;
 }
 
 .wallViewWallName{
-	text-align: center;
+	
+	text-align: left;
+	
+	
 }
 .wallViewNoteName{
 	text-align: left;
+	
 }
