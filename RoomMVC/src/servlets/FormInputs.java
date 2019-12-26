@@ -61,13 +61,13 @@ public class FormInputs extends HttpServlet {
 			try {
 				createARoom(request,response);
 			} catch (ServletException | IOException | SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			break;
-		case "/listAllRooms":
-			listAllRooms(request,response);
-			break;
+		//case "/listAllRooms":
+			//listAllRooms(request,response);
+			//break;
 		
 		default:
 			try {
@@ -89,23 +89,23 @@ public class FormInputs extends HttpServlet {
 	}*/
 	
 	private void createARoom(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
-		String roomName = request.getParameter("RoomName");
+		
 		String northWallName = request.getParameter("NorthWallName");
 		String eastWallName = request.getParameter("EastWallName");
 		String westWallName = request.getParameter("WestWallName");
 		String southWallName = request.getParameter("SouthWallName");
 		
-		roomData.createRoom(new RoomInfo(roomName,northWallName,eastWallName,westWallName,southWallName));
+		roomData.createRoom(new RoomInfo(northWallName,eastWallName,westWallName,southWallName));
 		
-		ArrayList<RoomInfo> CreatedRoom = new ArrayList<RoomInfo>();
+		//ArrayList<RoomInfo> CreatedRoom = new ArrayList<RoomInfo>();
 		
-		CreatedRoom = roomData.showARoom(roomName);
-		request.setAttribute("showCreatedRoom", CreatedRoom);
-		response.sendRedirect("showCreatedRoom");
+		//CreatedRoom = roomData.showARoom(northWallName);
+		//request.setAttribute("showCreatedRoom", CreatedRoom);
+		//response.sendRedirect("showCreatedRoom");
 		
 	}
 	
-	private void listAllRooms(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	/*private void listAllRooms(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		ArrayList<RoomInfo> AllRooms = new ArrayList<RoomInfo>();
 		
@@ -117,7 +117,7 @@ public class FormInputs extends HttpServlet {
 		dispatcher.forward(request, response);
 		
 		
-	}
+	}*/
 	
 
 }

@@ -25,7 +25,6 @@
 	</div>
 	<div class="wallView">
 		<form class="forms" action="createARoom" method="post">
-			Set Room name: <input type="text" name="RoomName"><br>
 			Set North Wall name: <input type="text" name="NorthWallName"><br>
 			Set East Wall name: <input type="text" name="EastWallName"><br>
 			Set West Wall name: <input type="text" name="WestWallName"><br>

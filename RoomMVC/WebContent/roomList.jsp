@@ -25,7 +25,7 @@
 	
 	<div class="wallView">
 		<div class="wallViewContent">
-			<c:forEach items ="${allAvailableRooms}" var = "wall" begin="2" end="5">
+			<c:forEach items ="${allAvailableRooms}" var = "wall" begin="1" end="4">
 				<div class="wallViewWallName">
 					<section>${items.wall} :</section>
 						<c:forEach var = "note" begin = "1" end = "20">

@@ -2,26 +2,18 @@ package beans;
 
 public class RoomInfo {
 	
-	String roomName, northWall, eastWall, westWall, southWall;
+	String northWall, eastWall, westWall, southWall;
 	
 	public RoomInfo() {}
 	
-	public RoomInfo(String roomName, String northWall, String eastWall, String westWall, String southWall) {
+	public RoomInfo(String northWall, String eastWall, String westWall, String southWall) {
 		super(); //returns a RoomInfo object
-		this.roomName = roomName;
 		this.northWall = northWall;
 		this.eastWall = eastWall;
+		this.westWall = westWall;
 		this.southWall = southWall;
 		
 		
-	}
-
-	public String getRoomName() {
-		return roomName;
-	}
-
-	public void setRoomName(String roomName) {
-		this.roomName = roomName;
 	}
 
 	public String getNorthWall() {

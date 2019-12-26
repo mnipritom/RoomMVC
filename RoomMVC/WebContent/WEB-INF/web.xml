@@ -7,4 +7,13 @@
     
   </welcome-file-list>
   
+  <servlet>
+  	<servlet-name>formActionHandler</servlet-name>
+  	<servlet-class>servlets.FormInputs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>formActionHandler</servlet-name>
+  	<url-pattern>/createARoom</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
